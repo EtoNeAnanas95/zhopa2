@@ -105,7 +105,6 @@ namespace ConsoleApp2
                         Console.WriteLine("число " + chislo + " может делиться на: ");
                         for (int i = 1; i <= chislo; i++)
                         {
-                            /*int Q = chislo % i;*/
                             if (chislo % i == 0)
                             {
                                 Console.WriteLine(i);
