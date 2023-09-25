@@ -37,7 +37,9 @@ namespace ConsoleApp2
                 static void game()
                 {
 
-                    int chislo = 66;
+                    int chislo;
+                    Random random = new Random();
+                    chislo = random.Next(0, 100);
                     Console.WriteLine("Угодай число, сладкий)");
                     int ygodai = Convert.ToInt32(Console.ReadLine());
                     if (ygodai == chislo)
