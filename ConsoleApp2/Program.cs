@@ -88,7 +88,7 @@ namespace ConsoleApp2
                             int G = i + 1;
                             int B = j + 1;
                             Console.Write(G + " * " + B + " = " + tablica[j, i]);
-                            Console.Write("\t\t");
+                            Console.Write("\t");
                         }
                         Console.WriteLine();
                     }
