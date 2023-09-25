@@ -59,8 +59,7 @@ namespace ConsoleApp2
                     Console.WriteLine("УРА ПОБЕДА");
                     Console.WriteLine("УРА ПОБЕДА");
                 }
-
-                }
+                
                 static void tablica()
                 {
 
