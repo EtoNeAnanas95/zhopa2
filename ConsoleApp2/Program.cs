@@ -38,7 +38,7 @@ namespace ConsoleApp2
                 {
                     Random random = new Random();
                     int chislo = random.Next(0, 100);
-                    Console.WriteLine("Угодай число, сладкий)");
+                    Console.WriteLine("Угодай число, сладенький)");
                     int ygodai = Convert.ToInt32(Console.ReadLine());
                     while (ygodai != chislo)
                     {
@@ -59,7 +59,6 @@ namespace ConsoleApp2
                     Console.WriteLine("УРА ПОБЕДА");
                     Console.WriteLine("УРА ПОБЕДА");
                 }
-                
                 static void tablica()
                 {
 
@@ -81,7 +80,7 @@ namespace ConsoleApp2
                             int G = i + 1;
                             int B = j + 1;
                             Console.Write(G + " * " + B + " = " + tablica[j, i]);
-                            Console.Write("\t");
+                            Console.Write("\t\t");
                         }
                         Console.WriteLine();
                     }
@@ -98,6 +97,7 @@ namespace ConsoleApp2
                         Console.WriteLine("число " + chislo + " может делиться на: ");
                         for (int i = 1; i <= chislo; i++)
                         {
+                            /*int Q = chislo % i;*/
                             if (chislo % i == 0)
                             {
                                 Console.WriteLine(i);
