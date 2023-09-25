@@ -36,37 +36,29 @@ namespace ConsoleApp2
 
                 static void game()
                 {
-
-                    int chislo;
                     Random random = new Random();
-                    chislo = random.Next(0, 100);
+                    int chislo = random.Next(0, 100);
                     Console.WriteLine("Угодай число, сладкий)");
                     int ygodai = Convert.ToInt32(Console.ReadLine());
-                    if (ygodai == chislo)
+                    while (ygodai != chislo)
                     {
-                        Console.WriteLine("УРА ПОБЕДА");
-                        Console.WriteLine("УРА ПОБЕДА");
-                        Console.WriteLine("УРА ПОБЕДА");
-                    }
-                    else
-                    {
-                        while (ygodai != chislo)
+                        if (ygodai < chislo)
                         {
-                            if (ygodai < chislo)
-                            {
 
-                                Console.WriteLine("Бро, нада побольше");
-                                ygodai = Convert.ToInt32(Console.ReadLine());
-
-                            }
-                            else
-                            {
-                                Console.WriteLine("Бро, это слишком много, я не вывожу");
-                                ygodai = Convert.ToInt32(Console.ReadLine());
-                            }
-
+                            Console.WriteLine("Бро, нада побольше");
                         }
+                        else if (ygodai > chislo)
+                        {
+
+                            Console.WriteLine("Бро, это слишком много, я не вывожу");
+                        }
+                        ygodai = Convert.ToInt32(Console.ReadLine());
                     }
+                    
+                    Console.WriteLine("УРА ПОБЕДА");
+                    Console.WriteLine("УРА ПОБЕДА");
+                    Console.WriteLine("УРА ПОБЕДА");
+                }
 
                 }
                 static void tablica()
